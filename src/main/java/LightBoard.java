@@ -32,11 +32,12 @@ public class LightBoard
         numOn++;
       }
     }
-   if(lights[r][col]&&numOn%2==0)
+   if(lights[r][col]&&numOn%2==0){
      return false;
-    if(!lights[r][col]&&numOn%3==0)
+   }
+    if(!lights[r][col]&&numOn%3==0){
       return true;
-    else
+    }
    return lights[r][col];
   }
   public boolean[][] getLights()
